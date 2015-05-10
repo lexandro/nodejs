@@ -3,4 +3,6 @@ Dockerized Node.js image with bower based on minimal linux image Alpine
 
 Usage:
 =====
-docker run -t lexandro/nodejs <command>
+docker run -it -v $(pwd):/work lexandro/nodejs sh
+
+It maps your current folder into /work on the container
